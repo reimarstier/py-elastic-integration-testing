@@ -1,0 +1,2 @@
+https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
+https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-prod-cluster-composefile
