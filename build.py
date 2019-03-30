@@ -12,8 +12,11 @@ use_plugin('python.pycharm')
 name = "py-elastic-integration-testing"
 module_name = "py_elastic_int_testing"
 default_task = "publish"
+version = "0.1"
 
 
 @init
 def set_properties(project):
     project.set_property("dir_source_unittest_python", "src/test/python")
+    project.set_property("unittest_module_glob", "test_*.py")
+
