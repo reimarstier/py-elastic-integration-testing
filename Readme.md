@@ -1,6 +1,10 @@
+# Documentation
+* Conda environments https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
+* pip-tools https://github.com/jazzband/pip-tools
+
 # Create/activate virtual environment
 conda env create -f environment.yml
-conda activate py-elastic-in
+conda activate py-elastic-int
 
 # maintain dependencies (https://github.com/jazzband/pip-tools)
 * create/upgrade new requirements.txt (may be skipped)
