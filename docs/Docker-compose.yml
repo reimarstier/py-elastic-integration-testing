@@ -1,0 +1,4 @@
+https://docs.docker.com/compose/extends/
+
+run <container> <command>
+docker-compose -f docker-compose/unittest.yml run pytest pyb run_unit_tests --debug
