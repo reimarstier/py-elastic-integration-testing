@@ -9,6 +9,7 @@ use_plugin("python.distutils")
 
 
 name = "py-elastic-integration-testing"
+module_name = "py_elastic_int_testing"
 default_task = "publish"
 
 
