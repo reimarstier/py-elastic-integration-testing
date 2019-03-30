@@ -1,0 +1,19 @@
+---
+version: '2.2'
+services:
+  pytest:
+    image: registry.klautspeicher.de/pytest:0.1
+    build:
+      context: ./
+      dockerfile: Dockerfile-pytest
+      args:
+        LIB_RD_KAFKA_VERSION: 1.0.0
+    container_name: pytest
+    command: pyb install_dependencies run_unit_tests
+    volumes:
+      - ../:/app
+    networks:
+      - esnet
+
+networks:
+  esnet:

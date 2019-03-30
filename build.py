@@ -19,4 +19,4 @@ version = "0.1"
 def set_properties(project):
     project.set_property("dir_source_unittest_python", "src/test/python")
     project.set_property("unittest_module_glob", "test_*.py")
-
+    project.depends_on_requirements("requirements.txt")
