@@ -2,3 +2,8 @@ https://docs.docker.com/compose/extends/
 
 run <container> <command>
 docker-compose -f docker-compose/unittest.yml run pytest pyb run_unit_tests --debug
+
+# run test container in same network
+docker network ls
+docker run --network docker-compose_esnet -v $(pwd)/:/app/ registry.klautspeicher.de/pytest:0.1 sleep 3000
+python kafka_admcli.py kafka:9092 describe_configs topic testrun2

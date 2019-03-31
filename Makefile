@@ -7,10 +7,10 @@ run:
 	docker-compose -f docker-compose/unittest.yml up
 
 envs:
-	conda env list
+	$(CONDA_EXE) env list
 
 activate: 
-	conda activate py-elastic-int
+	echo conda activate py-elastic-int
 
 tests:
 	#pyb run_unit_tests
